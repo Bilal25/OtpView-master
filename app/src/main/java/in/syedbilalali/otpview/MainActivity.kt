@@ -28,7 +28,9 @@ class MainActivity : AppCompatActivity() {
                 Toasty.success(this@MainActivity, "The OTP is $otp", Toast.LENGTH_SHORT).show()
             }
         }
-        errorButton.setOnClickListener { otpTextView?.showError() }
+        errorButton.setOnClickListener {
+
+            otpTextView?.showError() }
         successButton.setOnClickListener { otpTextView?.showSuccess() }
     }
 }
