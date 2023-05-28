@@ -30,7 +30,15 @@ class MainActivity : AppCompatActivity() {
         }
         errorButton.setOnClickListener {
 
-            otpTextView?.showError() }
-        successButton.setOnClickListener { otpTextView?.showSuccess() }
+            otpTextView?.showError()
+            otpTextView?.showTextColor("")
+
+        }
+        successButton.setOnClickListener {
+
+            otpTextView?.showSuccess()
+            otpTextView?.showTextColor("")
+
+        }
     }
 }

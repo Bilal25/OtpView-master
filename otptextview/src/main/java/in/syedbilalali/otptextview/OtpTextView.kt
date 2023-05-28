@@ -204,11 +204,18 @@ class OtpTextView : FrameLayout {
         itemViews?.let { itemViews ->
             for (itemView in itemViews) {
                 itemView.setViewState(ItemView.ERROR)
-                itemView.setTextColor("")
+
             }
         }
     }
 
+    fun showTextColor(s: String) {
+        itemViews?.let { itemViews ->
+            for (itemView in itemViews) {
+                itemView.setTextColor(s)
+            }
+        }
+    }
     fun resetState() {
         otp?.let {
             setFocus(it.length)

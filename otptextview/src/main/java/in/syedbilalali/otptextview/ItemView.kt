@@ -3,6 +3,7 @@ package `in`.syedbilalali.otptextview
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.TypedArray
+import android.graphics.Color
 import android.graphics.Typeface
 import android.util.AttributeSet
 import android.util.TypedValue
@@ -117,7 +118,7 @@ class ItemView : FrameLayout {
     fun setTextColor(value: String) {
 
             if (textView != null) {
-                textView?.setTextColor(resources.getColor(R.color.red))
+                textView?.setTextColor(Color.parseColor(value))
             }
 
     }
